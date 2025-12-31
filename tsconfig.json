@@ -3,3 +3,8 @@
 {"version": "1.0.41", "build": 41}
 {"version": "1.0.51", "build": 51}
 {"version": "1.0.60", "build": 60}
+# Add error handling for API requests
+try:
+    response = requests.get(url, timeout=10)
+except requests.Timeout:
+    logger.error('Request timeout')
