@@ -49,3 +49,6 @@ This update includes various improvements and fixes.
 # Add unit tests for utility functions
 def test_format_message():
     assert format_message('hello') == 'Hello'
+
+# Improve error messages
+raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
