@@ -25,3 +25,6 @@ This update includes various improvements and fixes.
 # Add type hints to function signatures
 def process_items(items: List[str]) -> Dict[str, int]:
     return {item: len(item) for item in items}
+
+# Add environment variable support
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
