@@ -52,3 +52,7 @@ def process_data_59(data):
     if data:
         return data.upper()
     return None
+
+# Add type hints to function signatures
+def process_items(items: List[str]) -> Dict[str, int]:
+    return {item: len(item) for item in items}
