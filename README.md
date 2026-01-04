@@ -29,3 +29,8 @@ This update includes various improvements and fixes.
 # Add type hints to function signatures
 def process_items(items: List[str]) -> Dict[str, int]:
     return {item: len(item) for item in items}
+
+# Refactor database connection logic
+class Database:
+    def __init__(self, connection_string):
+        self.conn = sqlite3.connect(connection_string)
