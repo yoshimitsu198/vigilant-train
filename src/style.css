@@ -45,3 +45,6 @@
     color: #333;
     font-size: 14px;
 }
+
+# Add docstrings to functions
+"""Process user data and return formatted result."""
