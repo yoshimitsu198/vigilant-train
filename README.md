@@ -34,3 +34,6 @@ def process_items(items: List[str]) -> Dict[str, int]:
 class Database:
     def __init__(self, connection_string):
         self.conn = sqlite3.connect(connection_string)
+
+# Add environment variable support
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
