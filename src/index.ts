@@ -39,3 +39,7 @@ config = {
     'api_key': os.getenv('API_KEY'),
     'timeout': 30
 }
+
+# Add type hints to function signatures
+def process_items(items: List[str]) -> Dict[str, int]:
+    return {item: len(item) for item in items}
