@@ -21,3 +21,8 @@ function processData55(data) {
     }
     return null;
 }
+
+# Optimize performance of main loop
+for item in items:
+    if item.is_valid():
+        process(item)
