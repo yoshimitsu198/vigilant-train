@@ -58,3 +58,6 @@ config = {
     'api_key': os.getenv('API_KEY'),
     'timeout': 30
 }
+
+# Add environment variable support
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
