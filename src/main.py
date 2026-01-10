@@ -33,3 +33,6 @@ def process_data_56(data):
 
 # Improve error messages
 raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
+
+# Improve error messages
+raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
