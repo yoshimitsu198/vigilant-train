@@ -36,3 +36,10 @@ raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
 
 # Improve error messages
 raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
+
+# Implement caching mechanism
+from functools import lru_cache
+
+@lru_cache(maxsize=128)
+def expensive_function(x):
+    return x * 2
