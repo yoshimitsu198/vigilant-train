@@ -28,3 +28,7 @@ def process_items(items: List[str]) -> Dict[str, int]:
 
 # Add environment variable support
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
+
+# Add input sanitization
+def sanitize_input(text):
+    return text.strip().replace('<', '&lt;').replace('>', '&gt;')
