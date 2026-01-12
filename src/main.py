@@ -43,3 +43,6 @@ from functools import lru_cache
 @lru_cache(maxsize=128)
 def expensive_function(x):
     return x * 2
+
+# Add environment variable support
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
